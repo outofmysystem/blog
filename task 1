@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container"> 
+                <div class="main-nav container flex">
+                    <a href="#" class="site-logo">
+                        <img src="./logo/lg.jpg" alt="site logo">
+                    </a>
+                    <div class="nav-links">
+                        <ul class="flex">
+                        <li class="hover-link nav-item">HOME</li>
+                        <li class="hover-link nav-item">NEWS</li>
+                        <li class="hover-link nav-item">WORLD</li>
+                        <li class="hover-link nav-item">BUSINESS</li>
+                        <li class="hover-link nav-item">POLITICS</li>
+                        <li class="hover-link nav-item">ENTERTAINMENT</li>
+                        <li class="hover-link nav-item">SPORTS</li>
+                    </ul></div>
+                   </div> 
+                   <div class="search-bar flex">
+                    <input type="text" class="news-input" placeholder="e.g. Science">
+                    <button class="search-button">Search</button>
+                   </div>
+                </nav>
+    </header>
+    <div class="container main-content">
+        <section class="playlist">
+            <article>
+                <img src="./logo/news1.png" alt="Reading newspapers">
+                <div class="playlist">
+                    <span class="category">Culture</span>
+                    <span class="featured">Featured</span>
+                    <h2>Songs for your late night  drives...</h2>
+                    <p>October 18, 2022</p>
+                </div>
+            </article>
+            <article>
+                <img src="./logo/Red Minimalist Fashion New Blog Post Announcement Instagram Post.png" alt="Jane">
+                <div class="fashion">
+                    <span class="category">Lifestyle</span>
+                    <span class="featured">Featured</span>
+                    <h2>winter has became one of the most...</h2>
+                    <p>October 18, 2022</p>
+                </div>
+            </article>
+            <article>
+                <img src="./logo/news3.jpg" alt="Coffee">
+                <div class="economy">
+                    <span class="category">Finance</span>
+                    <span class="featured">Featured</span>
+                    <h2>What you need to know ...</h2>
+                    <p>October 18, 2022</p>
+                </div>
+            </article>
+            <article>
+                <img src="./logo/news4.png" alt="Gratitude">
+                <div class="vacation">
+                    <span class="category">Travel</span>
+                    <span class="featured">Featured</span>
+                    <h2>Best gateaway for this summer...</h2>
+                    <p>October 18, 2022</p>
+                </div>
+            </article>
+        </section>
+        <aside class="latest-news">
+            <h3>Latest</h3>
+            <ul>
+                <li><a href="#">ICC T20 World Cup 2022 Schedule update... <span>October 21, 2022</span></a></li>
+                <li><a href="#">Tropical depression: Mexico’s pacific coast... <span>October 20, 2022</span></a></li>
+                <li><a href="#">Tropical depression: Mexico’s pacific coast... <span>October 20, 2022</span></a></li>
+                <li><a href="#">Local coming back on street again after... <span>October 20, 2022</span></a></li>
+            </ul>
+        </aside>
+    </div>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.searchbar{
+    color: black;
+    background-image: linear-gradient(to right, rgb(160, 113, 247) , #e7e5f0);
+    margin: 0%;
+    float: right;
+    border-radius: 5px;
+    padding: 2px;
+}
+.searchbar:hover{
+    height: 20px;
+    width: 20px;
+
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+header {
+    background-image: url('header-background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #e9decf;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #e9decf;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    transition: color 0.3s, transform 0.3s, background-color 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+    background-color: rgba(255, 204, 0, 0.1);
+}
+
+.breaking-news {
+    background-image: url('breaking-news-background.jpg'); /* Replace with the path to your breaking news image */
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.featured-articles {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.playlist {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    flex: 1;
+    min-width: 300px;
+    max-width: 48%;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.featured-articles article:hover {
+    transform: translateY(-5px);
+}
+
+.featured-articles img {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #ffcc00;
+}
+
+.article-info {
+    padding: 10px;
+}
+
+.article-info .category,
+.article-info .featured {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 0.9em;
+    color: #555;
+    background-color: #f0f0f0;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.article-info .category {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.article-info .featured {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.article-info h2 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.article-info h2:hover {
+    color: #007bff;
+}
+
+.article-info p {
+    font-size: 0.9em;
+    color: #777;
+}
+
+.latest-news {
+    flex: 1;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.latest-news:hover {
+    transform: translateY(-5px);
+}
+
+.latest-news h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 5px;
+}
+
+.latest-news ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.latest-news ul li {
+    margin: 15px 0;
+}
+
+.latest-news ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    font-size: 1.1em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.latest-news ul li a:hover {
+    color: #007bff;
+    transform: scale(1.05);
+}
+
+.latest-news ul li a span {
+    display: block;
+    font-size: 0.9em;
+    color: #777;
+}
+
+
+
+
